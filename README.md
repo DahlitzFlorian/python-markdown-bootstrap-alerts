@@ -10,7 +10,7 @@ This extension adds bootstrap alerts support to [Python-Markdown].
 ### Install from PyPI
 
 ```
-$ python -m pip install python-markdown-bootstrap-alerts
+$ python -m pip install mdx_alerts
 ```
 
 ### Install locally

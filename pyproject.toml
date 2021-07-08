@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mdx_alerts"
+version = "1.0.0"
+description = "Python-Markdown extension to support bootstrap alerts"
+authors = ["Florian Dahlitz <f2dahlitz@freenet.de>"]
+keywords = ["python-markdown", "extension", "python-markdown extension", "bootstrap alerts", "bootstrap alerts extension"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/DahlitzFlorian/python-markdown-bootstrap-alerts"
+repository = "https://github.com/DahlitzFlorian/python-markdown-bootstrap-alerts"
+packages = [
+    { include = "mdx_alerts.py" },
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.scripts]
+mdx_alerts = "mdx_alerts:AlertExtension"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Markdown = "^3.3.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
