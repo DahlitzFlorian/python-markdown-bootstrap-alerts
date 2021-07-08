@@ -1,6 +1,7 @@
 # Boostrap alerts extension for Python-Markdown
 
 ![Tests](https://github.com/DahlitzFlorian/python-markdown-bootstrap-alerts/actions/workflows/main.yml/badge.svg?branch=master)
+![Python 3.6](https://img.shields.io/badge/Python-%3E%3D%203.6-blue)
 
 This extension adds bootstrap alerts support to [Python-Markdown].
 
