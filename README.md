@@ -1,5 +1,7 @@
 # Boostrap alerts extension for Python-Markdown
 
+![Tests](https://github.com/DahlitzFlorian/python-markdown-bootstrap-alerts/actions/workflows/main.yml/badge.svg?branch=master)
+
 This extension adds bootstrap alerts support to [Python-Markdown].
 
 [Python-Markdown]: https://github.com/Python-Markdown/markdown
@@ -47,7 +49,7 @@ Either, by using its identifier `mdx_alerts`:
 The pattern starts with two colons follows by the alert level, e.g. info.
 Everything after the newline character is counted towards the alert message/body until on an empty line the two colons appear again.
 
-```
+```markdown
 :: info
 This is the body.
 
@@ -57,7 +59,7 @@ Even multi-line is possible.
 
 The above snippet results in:
 
-```markup
+```html
 <div class="alert alert-info" role="alert">
     <h4 class="alert-heading"><strong>Info</strong></h4>
     <p>This is the body.</p>
@@ -67,7 +69,7 @@ The above snippet results in:
 
 Additionally, you can overwrite the default heading by supplying an alternative via the `heading=` attribute after the alert level:
 
-```
+```markdown
 :: info heading="Alternative Heading"
 This is the body.
 ::
@@ -75,7 +77,7 @@ This is the body.
 
 ... which results in:
 
-```markup
+```html
 <div class="alert alert-info" role="alert">
     <h4 class="alert-heading"><strong>Alternative Heading</strong></h4>
     <p>This is the body.</p>
